@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Main Suite" parallel="false" verbose="2">
+
+	<listeners>
+          <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+          <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+          <listener class-name="com.arjun.automation.utilities.TestNGCustomReportListener" />
+          <listener class-name="com.arjun.automation.utilities.ExtentReportsListener"/>
+    </listeners>
+
+	<parameter name = "browser" value = "chrome" />
+	<parameter name = "url" value = "http://demo.guru99.com/v4/" />
+	<parameter name = "title" value = "Guru99 Bank Home Page" />
+
+	<suite-files>
+
+		<suite-file path="../src/test/java/com/arjun/automation/sampletest/test-suites/SampleTest.xml" />
+
+	</suite-files>
+
+</suite>

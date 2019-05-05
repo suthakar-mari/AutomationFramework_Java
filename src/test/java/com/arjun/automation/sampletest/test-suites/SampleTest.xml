@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Sub Suite" preserve-order="true">
+
+	<test name="1_SampleTest">
+		<classes>
+			<class name="com.arjun.automation.sampletest.TestClass" />
+			<class name="com.arjun.automation.sampletest.TC_LoginDDT_001" />
+			<class name="com.arjun.automation.sampletest.TC_AddCustomer_002" />
+		</classes>
+	</test>
+
+</suite>
